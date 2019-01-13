@@ -11,6 +11,6 @@ const intervalId = setInterval(() => sensaSay('For the north'), 1000)
 setTimeout(() => setImmediate(()=> clearInterval(intervalId)), 10000)
 
 setTimeout(() => {
-    johnSay('Hello Ladies Stark')
-    setImmediate(()=> aryaSay('Thank you for needle'))
+    johnSay('hello Ladies Stark')
+    setImmediate(()=> aryaSay('thank you for needle'))
     }, 2000)
