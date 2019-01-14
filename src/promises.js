@@ -32,5 +32,7 @@ const johnAndAryaSay = (isSansaSaidFirstTime) => {
 
 };
 
-const intervalId = setInterval(() => sensaSayForTheNorth().then(johnAndAryaSay), 1000);
+const intervalId = setInterval(() => sensaSayForTheNorth().then(johnAndAryaSay).catch(err => console.error(err)), 1000);
 setTimeout(() => clearInterval(intervalId), 11000);
+
+//j'ai mis 11 sec au lieu de 10, car il y a une ligne de plus mais je ne comprends pas d'ou vient le problème!
