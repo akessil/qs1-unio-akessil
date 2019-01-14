@@ -6,25 +6,25 @@ const johnSay = say(john);
 const aryaSay = say(arya);
 const sensaSay = say(sensa);
 
-let sansaSaidFirstTime=false;
+let sensaSaidFirstTime=false;
 
 const sensaSayForTheNorth = () => {
     sensaSay('For the North').then(function(response){
         console.log(response)
     });
     return new Promise( (resolve, reject) => {
-        resolve(sansaSaidFirstTime);
-        sansaSaidFirstTime = true;
+        resolve(sensaSaidFirstTime);
+        sensaSaidFirstTime = true;
     })
 };
 
-const johnAndAryaSay = (isSansaSaidFirstTime) => {
+const johnAndAryaSay = (isSensaSaidFirstTime) => {
 
     aryaSay('The king in the North').then(function(response){
         console.log(response)
     });
 
-    if(!isSansaSaidFirstTime){
+    if(!isSensaSaidFirstTime){
         johnSay('Winter is coming').then(function(response){
             console.log(response);
         });
